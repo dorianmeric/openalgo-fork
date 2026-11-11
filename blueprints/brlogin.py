@@ -1264,6 +1264,14 @@ def _broker_callback(broker, para=None):
         auth_token, error_message = auth_function(code)
         forward_url = "broker.html"
 
+    elif broker == "ibkr":
+        # IBKR has no redirect and no code to exchange: the trading session lives
+        # inside TWS or IB Gateway, and the login only proves this server can
+        # reach it. So the auth function takes no answer from the broker.
+        logger.debug("IBKR login - connecting to the local TWS/IB Gateway session")
+        auth_token, error_message = auth_function()
+        forward_url = "broker.html"
+
     else:
         code = request.args.get("code") or request.args.get("request_token")
         logger.debug("Generic broker - callback code present: %s", bool(code))

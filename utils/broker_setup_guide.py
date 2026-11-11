@@ -210,6 +210,19 @@ GUIDES = {
         "API key and secret you saved; there is nothing to type.",
         "redirect_hint": "",
     },
+    "ibkr": {
+        "name": "Interactive Brokers",
+        "sign_in": "saved_keys",
+        "fields": (),
+        "banner": "Login with Interactive Brokers connects to the TWS or IB Gateway "
+        "running on this machine. There is nothing to type: IBKR keeps the trading "
+        "session inside that desktop application, so it must be running and logged "
+        "in before you press login, with 'Enable ActiveX and Socket Clients' ticked "
+        "and 'Read-Only API' unticked to place orders. The connection settings "
+        "(IBKR_HOST, IBKR_PORT, IBKR_CLIENT_ID, IBKR_PAPER, IBKR_ACCOUNT) stay in "
+        ".env.",
+        "redirect_hint": "",
+    },
     "dhan": {
         "name": "Dhan",
         "sign_in": "redirect",

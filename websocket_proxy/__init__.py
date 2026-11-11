@@ -52,6 +52,7 @@ from broker.flattrade.streaming.flattrade_adapter import FlattradeWebSocketAdapt
 from broker.fyers.streaming.fyers_websocket_adapter import FyersWebSocketAdapter
 
 # Import the ibulls_adapter
+from broker.ibkr.streaming.ibkr_adapter import IbkrWebSocketAdapter
 from broker.ibulls.streaming.ibulls_adapter import IbullsWebSocketAdapter
 
 # Import the iifl_adapter
@@ -154,6 +155,7 @@ register_adapter("rupeezy", RupeezyWebSocketAdapter)
 register_adapter("sahi", SahiWebSocketAdapter)
 register_adapter("hdfcsky", HDFCSkyWebSocketAdapter)
 register_adapter("hdfcsecurities", HDFCSecuritiesWebSocketAdapter)
+register_adapter("ibkr", IbkrWebSocketAdapter)
 
 # AliceBlue adapter will be registered dynamically when first used
 

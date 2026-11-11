@@ -1,0 +1,11 @@
+{
+    "Plugin Name": "ibkr",
+    "Plugin URI": "https://openalgo.in",
+    "Description": "Interactive Brokers (IBKR) OpenAlgo Plugin \u2014 US Equities & Options via the TWS / IB Gateway socket API",
+    "Version": "1.0",
+    "Author": "OpenAlgo",
+    "Author URI": "https://openalgo.in",
+    "supported_exchanges": ["US", "US-OPT"],
+    "broker_type": "US_stock",
+    "leverage_config": false
+}

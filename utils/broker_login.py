@@ -65,6 +65,7 @@ CALLBACK_START_BROKERS = frozenset(
         "nubra",
         "groww",
         "sahi",
+        "ibkr",
         "ibulls",
         "iifl",
         "kotak",

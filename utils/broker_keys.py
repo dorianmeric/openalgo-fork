@@ -87,6 +87,7 @@ BROKER_NAMES = {
     "groww": "Groww",
     "hdfcsecurities": "HDFC Securities",
     "hdfcsky": "HDFC Sky",
+    "ibkr": "Interactive Brokers",
     "ibulls": "Ibulls",
     "iifl": "IIFL",
     "iiflcapital": "IIFL Capital",
