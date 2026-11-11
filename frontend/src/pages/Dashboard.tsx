@@ -1,4 +1,4 @@
-import { BarChart3, BookOpen, FileText, GraduationCap, Search, Zap } from 'lucide-react'
+import { BarChart3, FileText, Search, Zap } from 'lucide-react'
 import { useCallback, useEffect, useState } from 'react'
 import { Link } from 'react-router'
 import { Badge } from '@/components/ui/badge'
@@ -224,17 +224,6 @@ export default function Dashboard() {
       borderColor: 'border-violet-500/20 hover:border-violet-500/40',
     },
     {
-      href: 'https://docs.openalgo.in',
-      label: 'Documentation',
-      description: 'Tutorials, API docs & features',
-      icon: BookOpen,
-      gradient: 'from-cyan-500/10 to-cyan-500/5 hover:from-cyan-500/20 hover:to-cyan-500/10',
-      iconBg: 'bg-cyan-500/20',
-      iconColor: 'text-cyan-500',
-      borderColor: 'border-cyan-500/20 hover:border-cyan-500/40',
-      external: true,
-    },
-    {
       href: '/pnl-tracker',
       label: 'P&L Tracker',
       description: 'Live intraday MTM tracker',
@@ -243,17 +232,6 @@ export default function Dashboard() {
       iconBg: 'bg-green-500/20',
       iconColor: 'text-green-500',
       borderColor: 'border-green-500/20 hover:border-green-500/40',
-    },
-    {
-      href: 'https://www.openalgo.in/learn',
-      label: 'OpenVarsity',
-      description: 'Learn algo trading with OpenAlgo',
-      icon: GraduationCap,
-      gradient: 'from-blue-500/10 to-blue-500/5 hover:from-blue-500/20 hover:to-blue-500/10',
-      iconBg: 'bg-blue-500/20',
-      iconColor: 'text-blue-500',
-      borderColor: 'border-blue-500/20 hover:border-blue-500/40',
-      external: true,
     },
     {
       href: '/logs/latency',
@@ -477,20 +455,6 @@ export default function Dashboard() {
                 </div>
               </div>
             )
-
-            if (card.external) {
-              return (
-                <a
-                  key={card.href}
-                  href={card.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={cardClasses}
-                >
-                  {cardContent}
-                </a>
-              )
-            }
 
             return (
               <Link key={card.href} to={card.href} className={cardClasses}>

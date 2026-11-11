@@ -1,14 +1,4 @@
-import {
-  ArrowLeft,
-  Eye,
-  EyeOff,
-  Github,
-  Info,
-  Loader2,
-  LogIn,
-  MessageCircle,
-  ShieldCheck,
-} from 'lucide-react'
+import { ArrowLeft, Eye, EyeOff, Info, Loader2, LogIn, ShieldCheck } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router'
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
@@ -384,31 +374,6 @@ export default function Login() {
                 Contact your administrator to set up your account.
               </AlertDescription>
             </Alert>
-
-            <div className="flex justify-center lg:justify-start gap-4">
-              <Button variant="outline" asChild>
-                <a
-                  href="https://github.com/marketcalls/openalgo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2"
-                >
-                  <Github className="h-5 w-5" />
-                  GitHub
-                </a>
-              </Button>
-              <Button variant="outline" asChild>
-                <a
-                  href="https://openalgo.in/discord"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2"
-                >
-                  <MessageCircle className="h-5 w-5" />
-                  Discord
-                </a>
-              </Button>
-            </div>
           </div>
         </div>
       </div>

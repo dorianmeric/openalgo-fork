@@ -1,4 +1,4 @@
-import { BookOpen, ChevronDown, Menu } from 'lucide-react'
+import { ChevronDown, Menu } from 'lucide-react'
 import { useCallback, useState, useSyncExternalStore } from 'react'
 import { Link, useLocation } from 'react-router'
 import { Button } from '@/components/ui/button'
@@ -173,16 +173,6 @@ export function Navbar({ fluid = false }: NavbarProps = {}) {
                     </Link>
                   )
                 })}
-                <a
-                  href="https://docs.openalgo.in"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 rounded-lg px-3 py-3 text-sm transition-colors min-h-[44px] touch-manipulation hover:bg-muted active:bg-muted"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  <BookOpen className="h-4 w-4" />
-                  Docs
-                </a>
               </nav>
             </div>
           </SheetContent>
